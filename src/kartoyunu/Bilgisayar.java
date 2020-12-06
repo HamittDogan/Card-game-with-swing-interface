@@ -2,12 +2,12 @@ package kartoyunu;
 
 import java.util.ArrayList;
 
-public class bilgisayar extends oyuncu {
+public class Bilgisayar extends Oyuncu {
 
-    public bilgisayar() {
+    public Bilgisayar() {
     }
 
-    public bilgisayar(String kullanıcıID, String KullanıcıIsim, int skor, ArrayList<futbolcu> futbolcular, ArrayList<Basketbolcu> basketbolcular) {
+    public Bilgisayar(String kullanıcıID, String KullanıcıIsim, int skor, ArrayList<Futbolcu> futbolcular, ArrayList<Basketbolcu> basketbolcular) {
         super(kullanıcıID, KullanıcıIsim, 0, futbolcular, basketbolcular);
 
     }

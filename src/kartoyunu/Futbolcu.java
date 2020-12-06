@@ -1,6 +1,6 @@
 package kartoyunu;
 
-public class futbolcu extends sporcu {
+public class Futbolcu extends Sporcu {
 
     private String futbolcuAdi;
     private String futbolcuTakim;
@@ -9,11 +9,11 @@ public class futbolcu extends sporcu {
     private int kaleciKarsiKarsiya;
     private String link;
     private int sayac = 0;
-    public futbolcu() {
+    public Futbolcu() {
 
     }
 
-    public futbolcu(String sporcuIsim, String sporcuTakim, int penalti, int serbestAtis, int kaleciKarsiKarsiya, String link) {
+    public Futbolcu(String sporcuIsim, String sporcuTakim, int penalti, int serbestAtis, int kaleciKarsiKarsiya, String link) {
         super(sporcuIsim, sporcuTakim);
         this.futbolcuAdi = sporcuIsim;
         this.futbolcuTakim = sporcuTakim;

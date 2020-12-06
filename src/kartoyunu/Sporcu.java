@@ -1,16 +1,16 @@
 package kartoyunu;
 
-public class sporcu {
+public class Sporcu {
 
     private String sporcuIsim;
     private String sporcuTakim;
 
-    public sporcu() {
+    public Sporcu() {
         
 
     }
 
-    public sporcu(String sporcuIsim, String sporcuTakim) {
+    public Sporcu(String sporcuIsim, String sporcuTakim) {
         this.sporcuIsim = sporcuIsim;
         this.sporcuTakim = sporcuTakim;
     }

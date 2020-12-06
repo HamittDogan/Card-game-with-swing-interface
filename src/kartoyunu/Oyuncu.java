@@ -2,19 +2,19 @@ package kartoyunu;
 
 import java.util.ArrayList;
 
-public class oyuncu {
+public class Oyuncu {
 
     private String oyuncuID;
     private String oyuncuIsim;
     private int skor;
-    private ArrayList<futbolcu> futbolcular = new ArrayList<futbolcu>();
+    private ArrayList<Futbolcu> futbolcular = new ArrayList<Futbolcu>();
     private ArrayList<Basketbolcu> basketbolcular = new ArrayList<Basketbolcu>();
 
-    public oyuncu() {
+    public Oyuncu() {
 
     }
 
-    public oyuncu(String oyuncuID, String oyuncuIsim, int skor, ArrayList<futbolcu> futbolcular, ArrayList<Basketbolcu> basketbolcular) {
+    public Oyuncu(String oyuncuID, String oyuncuIsim, int skor, ArrayList<Futbolcu> futbolcular, ArrayList<Basketbolcu> basketbolcular) {
         this.oyuncuID = oyuncuID;
         this.oyuncuIsim = oyuncuIsim;
         this.skor = skor;
@@ -55,11 +55,11 @@ public class oyuncu {
         this.skor = skor;
     }
 
-    public ArrayList<futbolcu> getFutbolcular() {
+    public ArrayList<Futbolcu> getFutbolcular() {
         return futbolcular;
     }
 
-    public void setFutbolcular(ArrayList<futbolcu> futbolcular) {
+    public void setFutbolcular(ArrayList<Futbolcu> futbolcular) {
         this.futbolcular = futbolcular;
     }
 

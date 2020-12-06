@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Random;
 import javax.swing.JOptionPane;
 
-public class test {
+public class Test {
 
     private int A;
     private int B;
@@ -26,25 +26,25 @@ public class test {
         this.A = A;
     }
     //genel olarak butun futbolcuları tutan liste
-    public ArrayList<futbolcu> futbolcular = new ArrayList<futbolcu>(8);
+    public ArrayList<Futbolcu> futbolcular = new ArrayList<Futbolcu>();
     //genel olarak butun basketbolcuları tutan liste
-    public ArrayList<Basketbolcu> basketbolcular = new ArrayList<Basketbolcu>(8);
-    //oyuncunun sahip oldugu futbolcu kartları
-    public ArrayList<futbolcu> kart_futbolcu1 = new ArrayList<futbolcu>(4);
-    public ArrayList<futbolcu> kart_futbolcu2 = new ArrayList<futbolcu>(4);
+    public ArrayList<Basketbolcu> basketbolcular = new ArrayList<Basketbolcu>();
+    //oyuncunun sahip oldugu Futbolcu kartları
+    public ArrayList<Futbolcu> kart_futbolcu1 = new ArrayList<Futbolcu>();
+    public ArrayList<Futbolcu> kart_futbolcu2 = new ArrayList<Futbolcu>();
     //oyuncunun sahip oldugu Basketbolcu kartları
-    public ArrayList<Basketbolcu> kart_basketbolcu1 = new ArrayList<Basketbolcu>(4);
-    public ArrayList<Basketbolcu> kart_basketbolcu2 = new ArrayList<Basketbolcu>(4);
+    public ArrayList<Basketbolcu> kart_basketbolcu1 = new ArrayList<Basketbolcu>();
+    public ArrayList<Basketbolcu> kart_basketbolcu2 = new ArrayList<Basketbolcu>();
 
-    public test(int a) {
-        futbolcu futbolcu1 = new futbolcu("Cristiano Ronaldo", "Juventus", 90, 89, 93, "src\\img\\RONALDO.png");
-        futbolcu futbolcu2 = new futbolcu("Lionel Messi", "Barselona", 95, 90, 98, "src\\img\\Messi.png");
-        futbolcu futbolcu3 = new futbolcu("Zlatan İbrahimoviç", "Milan", 100, 90, 96, "src\\img\\Ibrahimovic.png");
-        futbolcu futbolcu4 = new futbolcu("Arjen Robben", "Bayern ", 83, 93, 87, "src\\img\\Robben.png");
-        futbolcu futbolcu5 = new futbolcu("Diego Maradona", "Napoli", 80, 90, 85, "src\\img\\MARADONA.png");
-        futbolcu futbolcu6 = new futbolcu("Nascimento Pele", "Santos", 90, 80, 75, "src\\img\\PELE.png");
-        futbolcu futbolcu7 = new futbolcu("Hakan Çalhanoğlu", "Milan", 80, 70, 85, "src\\img\\ÇALHANOĞLU.png");
-        futbolcu futbolcu8 = new futbolcu("Merih Demiral", "Yozgatspor", 100, 100, 99, "src\\img\\DEMIRAL.png");
+    public Test(int a) {
+        Futbolcu futbolcu1 = new Futbolcu("Cristiano Ronaldo", "Juventus", 90, 89, 93, "src\\img\\RONALDO.png");
+        Futbolcu futbolcu2 = new Futbolcu("Lionel Messi", "Barselona", 95, 90, 98, "src\\img\\Messi.png");
+        Futbolcu futbolcu3 = new Futbolcu("Zlatan İbrahimoviç", "Milan", 100, 90, 96, "src\\img\\Ibrahimovic.png");
+        Futbolcu futbolcu4 = new Futbolcu("Arjen Robben", "Bayern ", 83, 93, 87, "src\\img\\Robben.png");
+        Futbolcu futbolcu5 = new Futbolcu("Diego Maradona", "Napoli", 80, 90, 85, "src\\img\\MARADONA.png");
+        Futbolcu futbolcu6 = new Futbolcu("Nascimento Pele", "Santos", 90, 80, 75, "src\\img\\PELE.png");
+        Futbolcu futbolcu7 = new Futbolcu("Hakan Çalhanoğlu", "Milan", 80, 70, 85, "src\\img\\ÇALHANOĞLU.png");
+        Futbolcu futbolcu8 = new Futbolcu("Merih Demiral", "Yozgatspor", 100, 100, 99, "src\\img\\DEMIRAL.png");
 
         Basketbolcu basketbolcu1 = new Basketbolcu("Stephen Curry", "golden state", 80, 90, 85, "src\\img\\Stephen.png");
         Basketbolcu basketbolcu2 = new Basketbolcu("Kobe Braynt", "lakers", 90, 85, 90, "src\\img\\Kobe.png");
@@ -75,7 +75,7 @@ public class test {
 
         Collections.shuffle(futbolcular);
         Collections.shuffle(basketbolcular);
-        //oyuncu 1'in sahip oldugu futbolcu kartlarına
+        //oyuncu 1'in sahip oldugu Futbolcu kartlarına
         //genel olan futbolculardan ilk 4'ünü gönder
 
         kart_futbolcu1.add(futbolcular.get(0));
@@ -83,7 +83,7 @@ public class test {
         kart_futbolcu1.add(futbolcular.get(2));
         kart_futbolcu1.add(futbolcular.get(3));
 
-        //oyuncu 2'in sahip oldugu futbolcu kartlarına
+        //oyuncu 2'in sahip oldugu Futbolcu kartlarına
         //genel olan futbolculardan son 4'ünü gönder
         kart_futbolcu2.add(futbolcular.get(4));
         kart_futbolcu2.add(futbolcular.get(5));
@@ -106,7 +106,7 @@ public class test {
 
     }
 
-    public void karsilastir(kullanıcı Kullanici, bilgisayar Bilgisayar, int index) {
+    public void karsilastir(Kullanıcı Kullanici, Bilgisayar Bilgisayar, int index) {
 
         if (index == -5) {
             JOptionPane.showMessageDialog(null, "LÜTFEN FARKLI BİR KART SEÇİNİZ...", "KULLANILMIŞ KART ", JOptionPane.ERROR_MESSAGE);
@@ -188,7 +188,7 @@ public class test {
         }
     }
 
-    public void karsilastir2(kullanıcı Kullanici, bilgisayar Bilgisayar, int index) {
+    public void karsilastir2(Kullanıcı Kullanici, Bilgisayar Bilgisayar, int index) {
         if (index == -5) {
             JOptionPane.showMessageDialog(null, "LÜTFEN FARKLI BİR KART SEÇİNİZ...", "KULLANILMIŞ KART", JOptionPane.ERROR_MESSAGE);
 
@@ -262,5 +262,33 @@ public class test {
         }
     }
 
+    
+    public static void main(String args[]) {
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Konsol.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Konsol.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Konsol.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Konsol.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Konsol().setVisible(true);
+            }
+        });
+
+    }
   
 }

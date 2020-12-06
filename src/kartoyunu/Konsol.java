@@ -6,13 +6,13 @@ import java.awt.event.MouseEvent;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-public class konsol extends javax.swing.JFrame {
+public class Konsol extends javax.swing.JFrame {
 
-    test test1 = new test(5);
-    kullanıcı kullanici = new kullanıcı("46", "Hamit", 0, test1.kart_futbolcu1, test1.kart_basketbolcu1);
-    bilgisayar bilgisayar = new bilgisayar("66", "Bilgisayar", 0, test1.kart_futbolcu2, test1.kart_basketbolcu2);
+    Test test1 = new Test(5);
+    Kullanıcı kullanici = new Kullanıcı("46", "Hamit", 0, test1.kart_futbolcu1, test1.kart_basketbolcu1);
+    Bilgisayar bilgisayar = new Bilgisayar("66", "Bilgisayar", 0, test1.kart_futbolcu2, test1.kart_basketbolcu2);
 
-    public konsol() {
+    public Konsol() {
         initComponents();
 
         jButton1.setText("Futbolcu");
@@ -971,34 +971,6 @@ public class konsol extends javax.swing.JFrame {
     private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField12ActionPerformed
-
-    public static void main(String args[]) {
-
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(konsol.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(konsol.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(konsol.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(konsol.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new konsol().setVisible(true);
-            }
-        });
-
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

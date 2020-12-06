@@ -1,6 +1,6 @@
 package kartoyunu;
 
-public class Basketbolcu extends sporcu {
+public class Basketbolcu extends Sporcu {
 private String basketbolcuAdi;
 private String basketbolcuTakim;
 private    int ikilik;
